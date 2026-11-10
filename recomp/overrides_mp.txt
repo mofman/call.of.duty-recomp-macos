@@ -1,0 +1,5 @@
+# Functions replaced by hand-written C for the MP build (COD_TARGET=mp). Same patches as SP except screenfield.c (intro videos).
+55fc80   # CRT longjmp (CoDMP.exe): restore guest registers + host longjmp to the _setjmp3 call site (runtime/overrides/setjmp.c)
+4bbd60   # R_GetModeInfo (CoDMP.exe): extended r_mode table with widescreen + native modes (runtime/overrides/vidmodes.c)
+4bbdd0   # R_ModeList_f (CoDMP.exe): prints the extended table
+30034bb0 # CG_CalcViewValues (cgame_mp_x86.dll): Hor+ FOV for widescreen (runtime/overrides/widescreen.c)

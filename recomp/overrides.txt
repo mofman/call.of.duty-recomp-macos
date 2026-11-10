@@ -1,0 +1,7 @@
+# Functions replaced by hand-written C in runtime/overrides/. The lifted original stays callable as orig_f_XXXXXXXX.
+51ca3c   # CRT longjmp (CoDSP.exe): restore guest registers + host longjmp to the _setjmp3 call site
+4a5610   # R_GetModeInfo (CoDSP.exe): extended r_mode table with widescreen + native modes (runtime/overrides/vidmodes.c)
+4a5680   # R_ModeList_f (CoDSP.exe): prints the extended table
+30025c80 # CG_CalcViewValues (cgamex86.dll): Hor+ FOV for widescreen (runtime/overrides/widescreen.c)
+410410   # SCR_DrawScreenField (CoDSP.exe): drop the wide-screen side clear that hides intro videos (screenfield.c)
+4d4330   # RE_StretchPic (CoDSP.exe): skips that one clear quad

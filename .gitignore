@@ -1,0 +1,8 @@
+generated/
+gamedata/
+analysis/
+build/
+.venv/
+generated_mp/
+analysis/mp/
+dist/
